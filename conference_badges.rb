@@ -18,7 +18,7 @@ def assign_rooms(speakers_array)
   return room_message
  end  
  
- def printer
-    batch_badge_creator.each { |name| puts name }
-    assign_rooms.each { |room| puts room }
+ def printer(attendees)
+    batch_badge_creator(attendees).each { |name| puts name }
+    assign_rooms(attendees).each { |room| puts room }
  end   
